@@ -1,64 +1,129 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Personal Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-    <body bgcolor="#9eeddb">
-        <p class="one"><font size="15" color="black">
-            Sanchi Khandelwal
-        </font>
-        </p>
-    <hr>
-    <center>
-        sanchikhandelwal10@gmail.com
-    &nbsp;
-    &nbsp;
-    &nbsp;
-        +91 83189-55507
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    <a href="https://www.linkedin.com/in/sanchi-khandelwal/" target="_blank">
-        LinkedIn Profile
-    </a>
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    <a href="https://github.com/sanchi1004" target="_blank">
-        GitHub Profile
-    </a>
-    </center>
-    <hr>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanchi Khandelwal | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        body {
+            min-height: 100vh;
+            background-color: #f3e5f5;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: 'Verdana', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .navbar .links {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .navbar a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .navbar a img {
+            width: 20px;
+            height: 20px;
+        }
+        .navbar a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .content {
+            padding: 140px 50px 50px;
+            background: white;
+            font-family: 'Cambria', serif;
+        }
+        h2 {
+            color: #6a1b9a;
+            margin-bottom: 15px;
+            font-size: 26px;
+            border-bottom: 3px solid #6a1b9a;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-family: 'Garamond', serif;
+        }
+        p, ul {
+            font-size: 18px;
+            color: #4a148c;
+            line-height: 1.8;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            background: #ce93d8;
+            padding: 12px;
+            margin: 6px 0;
+            border-left: 5px solid #6a1b9a;
+            font-weight: 500;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        ul li img {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Sanchi Khandelwal | Portfolio</div>
+        <div class="links">
+            <a href="mailto:sanchikhandelwal10@gmail.com">📧 Email</a>
+            <a href="https://www.linkedin.com/in/sanchi-khandelwal/" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="https://github.com/sanchi1004" target="_blank">
+                <img src="github-icon.png" alt="GitHub"> GitHub
+            </a>
+        </div>
     </div>
-    <p>
-        <b class="two">Professional Summary</b>
-        <br>
-        <br>
-        Responsible and driven student eager to
-        gain practical experience in professional
-        settings. Offers excellent technical
-        abilities with software with great ability
-        to handle challenging work and
-        impressive time management skills.
-
-    </p>
-    <p>
-        <b class="two">Skills & Proficiencies</b>
-    </p>
-    <ul type="square">
-        <li>Fluent in English & French</li>
-        <li>Work well with computer languages like C,C++,Java and Python</li>
-        <li>Problem Solving</li>
-        <li>Proactive learner</li>
-    </ul>
-    <p>
-        <b class="two">Educational Background</b>
-    </p>
-    <ul type="square">
-        <li>Vellore Institute of Technology<br>B.Tech in Computer Science</li>
-        <li>AllenHouse Public School<br>High-School Diploma</li>
-    </ul>
-    </body>
+    <div class="content">
+        <h2>Professional Summary</h2>
+        <p>Responsible and driven student eager to gain practical experience in professional settings. Offers excellent technical abilities, the ability to handle challenging work, and impressive time management skills.</p>
+        <h2>Skills & Proficiencies</h2>
+        <ul>
+            <li><img src="language-icon.png" alt="Language"> Fluent in English & French</li>
+            <li><img src="code-icon.png" alt="Coding"> Proficient in C, C++, Java, and Python</li>
+            <li><img src="problem-solving-icon.png" alt="Problem Solving"> Strong problem-solving skills</li>
+            <li><img src="learning-icon.png" alt="Learning"> Quick and proactive learner</li>
+        </ul>
+        <h2>Educational Background</h2>
+        <ul>
+            <li><b>Vellore Institute of Technology</b> - B.Tech in Computer Science</li>
+            <li><b>AllenHouse Public School</b> - High-School Diploma</li>
+        </ul>
+    </div>
+</body>
 </html>
